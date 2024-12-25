@@ -1,0 +1,73 @@
+[debug] [2024-12-25T21:47:27.373Z] ----------------------------------------------------------------------
+[debug] [2024-12-25T21:47:27.374Z] Command:       /opt/homebrew/Cellar/node/22.6.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2024-12-25T21:47:27.374Z] CLI Version:   13.29.1
+[debug] [2024-12-25T21:47:27.374Z] Platform:      darwin
+[debug] [2024-12-25T21:47:27.374Z] Node Version:  v22.6.0
+[debug] [2024-12-25T21:47:27.375Z] Time:          Wed Dec 25 2024 16:47:27 GMT-0500 (Eastern Standard Time)
+[debug] [2024-12-25T21:47:27.375Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-25T21:47:27.379Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-25T21:47:27.379Z] > authorizing via signed-in user (gopi.valarpuram@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/gopiravi/workspace/sw-demo
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-25T21:47:47.891Z] Checked if tokens are valid: false, expires at: 1735163741171
+[debug] [2024-12-25T21:47:47.891Z] Checked if tokens are valid: false, expires at: 1735163741171
+[debug] [2024-12-25T21:47:47.891Z] > refreshing access token with scopes: []
+[debug] [2024-12-25T21:47:47.895Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-25T21:47:47.895Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-25T21:47:48.027Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-25T21:47:48.027Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-25T21:47:48.042Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-25T21:47:48.434Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-25T21:47:48.434Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project project1-6652a (Project1) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-25T21:47:49.620Z] Checked if tokens are valid: true, expires at: 1735166867028
+[debug] [2024-12-25T21:47:49.620Z] Checked if tokens are valid: true, expires at: 1735166867028
+[debug] [2024-12-25T21:47:49.620Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project1-6652a [none]
+[debug] [2024-12-25T21:47:49.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project1-6652a 200
+[debug] [2024-12-25T21:47:49.808Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project1-6652a {"projectId":"project1-6652a","projectNumber":"38394226481","displayName":"Project1","name":"projects/project1-6652a","resources":{"hostingSite":"project1-6652a"},"state":"ACTIVE","etag":"1_0d47c600-09ea-4736-a428-27bf88184690"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-12-25T21:48:10.806Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-12-25T21:48:10.898Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-12-25T21:48:10.899Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.1.0","browserURL":"https://www.gstatic.com/firebasejs/11.1.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.1.0/firebase.tgz"},"live":{"version":"11.1","browserURL":"https://www.gstatic.com/firebasejs/live/11.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.1.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.1.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.1.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.1.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.1.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.1.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.1.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.1.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.1.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.1.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/gopiravi/workspace/sw-demo 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=764294292&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-25T21:48:11.376Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-12-25T21:48:11.377Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-12-25T21:48:11.563Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-12-25T21:48:11.564Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-12-25T21:48:11.570Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-12-25T21:48:12.697Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-12-25T21:48:12.697Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"gopivr","id":11680116,"node_id":"MDQ6VXNlcjExNjgwMTE2","avatar_url":"https://avatars.githubusercontent.com/u/11680116?v=4","gravatar_id":"","url":"https://api.github.com/users/gopivr","html_url":"https://github.com/gopivr","followers_url":"https://api.github.com/users/gopivr/followers","following_url":"https://api.github.com/users/gopivr/following{/other_user}","gists_url":"https://api.github.com/users/gopivr/gists{/gist_id}","starred_url":"https://api.github.com/users/gopivr/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/gopivr/subscriptions","organizations_url":"https://api.github.com/users/gopivr/orgs","repos_url":"https://api.github.com/users/gopivr/repos","events_url":"https://api.github.com/users/gopivr/events{/privacy}","received_events_url":"https://api.github.com/users/gopivr/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"gopivr","company":null,"blog":"","location":null,"email":"gopivr@hotmail.com","hireable":null,"bio":null,"twitter_username":null,"notification_email":"gopivr@hotmail.com","public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2015-03-27T13:05:48Z","updated_at":"2024-12-25T20:59:36Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":42494,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as gopivr 
+[info] 
